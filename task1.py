@@ -22,4 +22,4 @@ interest = principle*rate*time / 365
 interest = math.floor(interest)
 interest = interest/100
 interest = format(interest, ".If")
-
+print(f"you have $(interest) interest.")

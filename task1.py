@@ -21,5 +21,5 @@ time = float(input("enter days: "))
 interest = principle*rate*time / 365
 interest = math.floor(interest)
 interest = interest/100
-interest = format(interest, ".If")
+interest = format(interest, ".1f")
 print(f"you have $(interest) interest.")

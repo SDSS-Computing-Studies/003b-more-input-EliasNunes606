@@ -14,11 +14,11 @@ That is worth $8.00 USD
 How many Canadian Dollars do you have? 1.25
 That is worth $1.00 USD
 """
-principal = float(input('Enter your amount: '))
-rate = float(input('Enter the rate: '))
-r = (rate / 100)
-time = float(input('Enter the # of days: '))
-x = int(principal*r*time)/365
-af= round(x, 1)
-ss= ("$" + str(af))
-print("You earned:", ss , "interest")
+import math
+
+population = float(input("Enter the current population: "))
+rgrowth = float(input("Enter the rate of growth: "))
+time = int(input("Enter the time in days: "))
+futurepopulation = (population)*(1 + (rgrowth / 100))**(time/365)
+futurepopulation = round(futurepopulation)
+print(f"There will be {futurepopulation} people after {time} days.")

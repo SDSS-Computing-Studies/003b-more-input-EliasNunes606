@@ -14,4 +14,11 @@ That is worth $8.00 USD
 How many Canadian Dollars do you have? 1.25
 That is worth $1.00 USD
 """
-
+principal = float(input('Enter your amount: '))
+rate = float(input('Enter the rate: '))
+r = (rate / 100)
+time = float(input('Enter the # of days: '))
+x = int(principal*r*time)/365
+af= round(x, 1)
+ss= ("$" + str(af))
+print("You earned:", ss , "interest")
